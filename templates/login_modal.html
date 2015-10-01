@@ -1,0 +1,22 @@
+<h3 id="rows"></h3>
+    <div id="modal">
+        <div class="col-xs-12 row">
+            <div class="col-xs-10">
+                <h2>Please log in!</h2>
+            </div>
+            <div class="col-xs-1 pull-right"><span class="glyphicon glyphicon-remove"></span></div>
+        </div>
+      <form action="jugglefox.php" method="post" id="login" class="col-xs-12 row">
+            <div class="col-xs-4 login_label">username</div>
+            <div class="col-xs-6"><input type="text" name="username" id="username" size="15"></div>
+            <div id="valid_username" class="col-xs-1"></div>
+            <div class="col-xs-4 login_label">password</div>
+            <div class="col-xs-6"><input type="password" name="password" id="password" size="15"></div>
+            <div id="valid_password" class="col-xs-1"></div>
+            <div class="col-xs-10 row" id="login_text">
+                <a id="signup" href="signup.php" class="col-xs-12">Not yet registered? Sign up here!</a>
+                <p>Forgotten <a href="recover.php?mode=username">username</a> or <a href='recover.php?mode=password'>password</a>?</p> 
+            </div>
+            <input type="submit" name="login_submit" class="btn btn-success col-xs-2" id="login_submit" value="ok">                     
+      </form>
+    </div>

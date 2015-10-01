@@ -1,0 +1,310 @@
+.panel  {margin-top: 3rem;}
+
+
+
+
+
+#tabs, 
+#operators       {
+			display: flex;
+			padding-left:0;
+			justify-content: space-around;
+			flex-wrap: wrap;
+			width:100%;
+			list-style: none;
+			}
+
+#tabs>li,
+#operators>li       {
+			  
+			  list-style: none;
+			  margin: 4px;
+			  width: 22%;
+			  height: 60px;
+			  border-radius: 10%;
+			  display:flex;
+			  align-items:center;
+			  justify-content:center;
+			  font-size: 3rem;
+			 }
+#tabs>li     {background: rgba(0,0,255,.1);}
+
+#operators>li  {
+				font-size: 5rem;
+				color: white;		
+
+				}
+
+#tabs>li>span  {font-size: 1.3em;}
+
+.red 		{background: rgb(229,93,93);}
+
+.blue 		{background: rgb(112,193,212);}
+
+.green 		{background: rgb(125,198,145);}
+
+.yellow		{background: rgb(222,187,67);}
+
+#timer      {border:1px solid rgb(200,200,200);
+			 border-radius: 10px;
+			 margin-top: 1%;
+			 padding-top: .7rem;
+			 padding-left: 2rem;
+		     height: 100px;
+		 	 font-size: 6rem;
+		 	 font-style: bold;
+		 	 color: rgb(100,100,100);}
+
+#timer li  {font-size: 4rem;}
+
+#checkmarks  {padding-right: 0;
+			  padding-top: 1rem;}
+
+#random_number,
+#calc			  {height: 150px;
+				 font-size: 8rem;			 
+				}
+
+.selected    {background: rgb(150,150,150)!important;
+			  color: white;}
+
+.numbers		{position: relative;
+				}
+span        {z-index: 1;}
+/*
+.numbers::after   	{content: '';
+					 height: 5px;
+					 width:50px;
+					 position: absolute;
+					 background: blue;
+					 position: relative;
+					 top:30px;
+					 left:25px;
+
+					 transform: rotate(45deg);}*/
+.line 			{transform-origin: 0% 0%;
+				 height: 10px;
+				 background: rgb(150,150,150);
+				 transition: background 400ms;
+				
+				}
+
+
+.blink 			{background: rgb(160,160,160)!important;
+				 transition: background 400ms;}
+
+#start,
+#undo,
+#skip  				{font-size: 3rem;
+					margin-right: 1rem;}
+
+.glyphicon    	{
+					font-size: 5rem;
+					color: rgb(100,100,100);
+				}
+
+#modal_bg  		{	width: 100%;
+					height: 100%;
+					background: rgba(0,0,0,.1);
+
+				}
+
+#modal, #hof 	{	position: fixed;
+					width: 40%;
+					left:0;
+					right:0;
+					background: white;
+					border-radius: 10px;
+					border: 1px solid gray;
+					margin: auto;
+					z-index:7000;
+					top:20%;
+					padding: 1.5rem;
+					display:none;
+					}
+
+#modal>input,
+#modal>h3 {		/*display:inline-block;
+					float:left;
+					margin:0.5rem;
+					width:40%;
+					padding-left: 3rem;
+					color: rgb(80,80,80);*/}
+
+#modal>h2   {margin-top: 0;
+			color: rgb(80,80,80);}
+#modal input,
+#modal div 	{
+			font-size: 2.5rem;
+			border-radius: 5px;
+			margin-bottom: 0.5em;
+			display: block;
+			float:left;}
+
+#results>li 	{list-style: none;}
+
+#signup     {	display: inline-block;
+				padding-top: 1rem;}
+
+.signup_fields  {padding: 1rem;
+				 font-size: 2rem;
+				 }
+
+.signup_fields:nth-of-type(odd)  {text-align: right;}
+
+.signup_fields>input  {border-radius: 5px;
+						font-size: 2rem;
+						}
+
+#signup_form  {margin-top: 3rem;}
+
+.error_msg                  {display: flex;
+                             width: 100%;
+                             background: rgba(255,0,0,.1);
+                             border: 2px solid red;
+                             padding: 1em;
+                             box-sizing: border-box;
+                             font-size: 2rem;
+                             margin-top: 1em;
+                             color: red;
+}
+.error_message				{color: red;
+							 font-style: italic;
+							 font-size: 0.8em;
+							 font-weight: 300;
+							 padding-left:0 !important;
+							
+							}
+
+#success_msg 				{position: fixed;
+							 z-index: 1000;
+							 top: 20%;
+							 left: 20%;
+							 width: 50%;
+							 height: auto;
+							 border-radius: 5px;}
+
+.registered 				{text-align: center;
+							 margin-top: 5rem;
+							 color: rgb(39, 174, 96);}
+
+#e_msg 						{color: red;
+							font-size: 1.5rem;}
+
+#feedback					{top: 20%;
+							 left: 0;
+							 right: 0;
+                        	margin: 0 auto;
+                        	width: 30%;
+                        	font-size: 3rem;
+                        	opacity : 1;
+                        	padding: 1rem;
+                        	position: absolute;
+                        	background: white;
+                        	z-index: 6000;
+                        	border-radius: 10px;
+                        	text-align: center;
+							}
+body 						{position: relative;}
+
+.small 						{font-size: 2em;
+							 color: rgb(125,198,145);}
+
+
+
+.login_label 				{padding-right: 0 !important;
+							 text-align: right;}
+
+#login_text p,
+#login_text a 				{font-size: 1.5rem;
+							 padding-left: 0;
+							 padding-top: 0;
+							 text-align: center;}
+
+#login_text p 				{padding-top: 0.5rem;}
+
+#modal 						{padding-right: 0;}
+
+#modal h2 					{text-align: center;
+							  margin-top: 0;
+							  }
+
+#username, #password  		{padding-left: 0.5em;
+							 color: rgb(100,100,100);}
+
+form[action="change_password.php"]>p 	{margin-bottom: 0;}
+form[action="change_password.php"]>input 	{margin-bottom: 1em;
+											 }
+#changepw		{	
+								float: left;}
+
+.username_valid 			{padding-left: 1rem;}
+
+#log_in 					{padding-left: 1em;}
+
+.glyphicon-remove 			{font-size: 2rem;}
+
+#rows 						{margin:0 !i;}
+
+#top10 td, #top10 + a			{font-size: 1.5em;
+								 margin-bottom: 1em;}
+
+.back				{padding-left: 0;
+						 font-size: 1.5em;}	
+
+h1.back 			{padding-left: 0;}	
+
+.tutorial 			{line-height: 200%;}
+
+#screenshot 		{width: 50%;
+					 float:right;}
+
+#container 			{margin-top: -2em;
+}
+
+@media (max-width: 767px) {
+
+	.panel-body 			{margin-top: 15%;
+							 margin-bottom: 0 !important;}
+	#tabs 					{}
+	#righthand_panel 		{margin-top: 0;
+							 padding-top: 0;}
+	.glyphicon-ok 			{font-size: 2em;}
+	#start, #undo, #skip	{font-size: 5vw;
+							 padding: .5em;}
+
+}
+
+@media (min-width: 768px) {
+
+#tabs>li, #operators>li 	{margin: 3px;}
+#timer 						{font-size: 3em;
+							 height: 60px;
+							 padding-top: 0;}
+.glyphicon-ok				{font-size: 3em;
+							 padding-right: 1em;}
+
+
+.green-border  				{border: 2px solid green;
+							 box-sizing: border-box;}
+
+
+.flex 						{display: flex !important;}
+
+#invalid_tabs 				{position: fixed;
+							 top: 10%;
+							 left: 7%;
+							 width: 25%;
+							 background: white;
+							 border-radius: 5px;
+							 color: red;
+							 font-size: 1.2em;
+							 font-style: italic;}
+
+	
+
+
+
+
+
+
